@@ -33,8 +33,10 @@ var numbersArray2;
 var myTuple;
 // 15) Crea un array tipizzato di oggetti "Studente" con nome e voto.
 var student;
-// 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
-// 18) Cosa sono i Generics in TypeScript?
-// 19) È possibile avere più tipi generici in un'interfaccia?
-// 20) Crea un'interfaccia generica per una risposta API.  
+var Panda = {
+    brand: "Fiat",
+    name: "Panda",
+    engine: "the most powerful ever",
+    wheels: 4
+};

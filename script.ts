@@ -65,7 +65,38 @@ interface User {
 let student: [name: string, vote: number]
 
 // 16) Crea un'interfaccia base "Veicolo" e estendila per creare "Auto".
+interface Vehicle {
+    brand: string,
+    name: string,
+    engine: string,
+}
+
+interface Auto extends Vehicle {
+    wheels: 4
+}
+
+
 // 17) Crea un oggetto che implementi l'interfaccia Auto.
+
+const Panda: Auto = {
+    brand: "Fiat",
+    name: "Panda",
+    engine: "the most powerful ever",
+    wheels: 4
+}
+
 // 18) Cosa sono i Generics in TypeScript?
+// Generics è un tipo che viene passato come argomento per una interface, serve ad inserire un valore in una interface senza definirne subito il tipo.
+
+
 // 19) È possibile avere più tipi generici in un'interfaccia?
-// 20) Crea un'interfaccia generica per una risposta API.  
+// sì, vanno separati con virgola tra le angle brackets.
+
+
+// 20) Crea un'interfaccia generica per una risposta API.
+
+interface data<d1, d2, d3, d5> {
+    data: d1,
+    moredata: d2,
+    ...
+}
